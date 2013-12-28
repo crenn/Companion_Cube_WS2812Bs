@@ -1,0 +1,214 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:WS2812 Components and solder pads
+LIBS:RGB lights-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "7 dec 2013"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L WS2812B U1
+U 1 1 52A38E96
+P 5750 3850
+F 0 "U1" H 5700 4000 60  0000 C CNN
+F 1 "WS2812B" H 5900 3600 60  0000 C CNN
+F 2 "~" H 5750 3850 60  0000 C CNN
+F 3 "~" H 5750 3850 60  0000 C CNN
+	1    5750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 52A38ED5
+P 4900 4100
+F 0 "C1" H 4900 4200 40  0000 L CNN
+F 1 "C" H 4906 4015 40  0000 L CNN
+F 2 "~" H 4938 3950 30  0000 C CNN
+F 3 "~" H 4900 4100 60  0000 C CNN
+	1    4900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 52A38EE8
+P 4900 3750
+F 0 "#PWR01" H 4900 3840 20  0001 C CNN
+F 1 "+5V" H 4900 3840 30  0000 C CNN
+F 2 "" H 4900 3750 60  0000 C CNN
+F 3 "" H 4900 3750 60  0000 C CNN
+	1    4900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 52A38EF7
+P 6450 4100
+F 0 "#PWR02" H 6450 4100 30  0001 C CNN
+F 1 "GND" H 6450 4030 30  0001 C CNN
+F 2 "" H 6450 4100 60  0000 C CNN
+F 3 "" H 6450 4100 60  0000 C CNN
+	1    6450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 52A38F06
+P 4900 4450
+F 0 "#PWR03" H 4900 4450 30  0001 C CNN
+F 1 "GND" H 4900 4380 30  0001 C CNN
+F 2 "" H 4900 4450 60  0000 C CNN
+F 3 "" H 4900 4450 60  0000 C CNN
+	1    4900 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3950 6450 3950
+Wire Wire Line
+	6450 3950 6450 4100
+Wire Wire Line
+	4900 3750 4900 3900
+Wire Wire Line
+	4900 3850 5350 3850
+Wire Wire Line
+	4900 4300 4900 4450
+Connection ~ 4900 3850
+Wire Wire Line
+	6400 3850 6800 3850
+Text GLabel 6800 3850 2    60   Input ~ 0
+Input
+Text GLabel 5150 4200 3    60   Input ~ 0
+Output
+Wire Wire Line
+	5350 3950 5150 3950
+Wire Wire Line
+	5150 3950 5150 4200
+$Comp
+L CONN_3 K1
+U 1 1 52A38F98
+P 8450 3800
+F 0 "K1" V 8400 3800 50  0000 C CNN
+F 1 "CONN_3" V 8500 3800 40  0000 C CNN
+F 2 "" H 8450 3800 60  0000 C CNN
+F 3 "" H 8450 3800 60  0000 C CNN
+	1    8450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K2
+U 1 1 52A38FA7
+P 8450 4400
+F 0 "K2" V 8400 4400 50  0000 C CNN
+F 1 "CONN_3" V 8500 4400 40  0000 C CNN
+F 2 "" H 8450 4400 60  0000 C CNN
+F 3 "" H 8450 4400 60  0000 C CNN
+	1    8450 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 7800 3800 0    60   Input ~ 0
+Input
+Text GLabel 7800 4400 0    60   Input ~ 0
+Output
+$Comp
+L +5V #PWR04
+U 1 1 52A38FE7
+P 7950 3500
+F 0 "#PWR04" H 7950 3590 20  0001 C CNN
+F 1 "+5V" H 7950 3590 30  0000 C CNN
+F 2 "" H 7950 3500 60  0000 C CNN
+F 3 "" H 7950 3500 60  0000 C CNN
+	1    7950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 52A38FF6
+P 7950 4200
+F 0 "#PWR05" H 7950 4290 20  0001 C CNN
+F 1 "+5V" H 7950 4290 30  0000 C CNN
+F 2 "" H 7950 4200 60  0000 C CNN
+F 3 "" H 7950 4200 60  0000 C CNN
+	1    7950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 52A39005
+P 7950 4600
+F 0 "#PWR06" H 7950 4600 30  0001 C CNN
+F 1 "GND" H 7950 4530 30  0001 C CNN
+F 2 "" H 7950 4600 60  0000 C CNN
+F 3 "" H 7950 4600 60  0000 C CNN
+	1    7950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 52A39014
+P 7950 4000
+F 0 "#PWR07" H 7950 4000 30  0001 C CNN
+F 1 "GND" H 7950 3930 30  0001 C CNN
+F 2 "" H 7950 4000 60  0000 C CNN
+F 3 "" H 7950 4000 60  0000 C CNN
+	1    7950 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3500 7950 3700
+Wire Wire Line
+	7950 3700 8100 3700
+Wire Wire Line
+	7800 3800 8100 3800
+Wire Wire Line
+	7950 4000 7950 3900
+Wire Wire Line
+	7950 3900 8100 3900
+Wire Wire Line
+	7950 4200 7950 4300
+Wire Wire Line
+	7950 4300 8100 4300
+Wire Wire Line
+	7800 4400 8100 4400
+Wire Wire Line
+	7950 4600 7950 4500
+Wire Wire Line
+	7950 4500 8100 4500
+$EndSCHEMATC

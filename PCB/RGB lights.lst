@@ -1,0 +1,16 @@
+eeschema (2013-07-07 BZR 4022)-stable  >> Creation date: 8/12/2013 8:22:25 AM
+#Cmp ( order = Reference )
+| C1         C           
+| K1         CONN_3      
+| K2         CONN_3      
+| U1         WS2812B     
+#End Cmp
+
+#Cmp ( order = Value )
+| C            C1        
+| CONN_3       K1        
+| CONN_3       K2        
+| WS2812B      U1        
+#End Cmp
+
+#End List
